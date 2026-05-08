@@ -1,0 +1,154 @@
+{
+  "calculators": [
+    {
+      "slug": "mortgage-calculator",
+      "name": "Mortgage Calculator",
+      "category": "finance",
+      "title": "Free Mortgage Calculator | Calculate Monthly Payments",
+      "description": "Calculate mortgage payments instantly. See monthly payment, total interest, and amortization schedule for any home loan.",
+      "keywords": "mortgage calculator, calculate mortgage, monthly mortgage payment, home loan calculator",
+      "icon": "🏠",
+      "popular": true
+    },
+    {
+      "slug": "loan-calculator",
+      "name": "Loan Calculator",
+      "category": "finance",
+      "title": "Free Loan Calculator | Monthly Payment & Interest",
+      "description": "Calculate loan payments, total interest, and repayment schedules for personal loans, auto loans, and more.",
+      "keywords": "loan calculator, personal loan calculator, auto loan, monthly payment calculator",
+      "icon": "💳",
+      "popular": true
+    },
+    {
+      "slug": "simple-interest-calculator",
+      "name": "Simple Interest Calculator",
+      "category": "finance",
+      "title": "Simple Interest Calculator | Calculate Interest Earned",
+      "description": "Calculate simple interest on savings or loans. Find total interest and final balance with our easy tool.",
+      "keywords": "simple interest calculator, interest calculator, calculate interest",
+      "icon": "📈",
+      "popular": false
+    },
+    {
+      "slug": "compound-interest-calculator",
+      "name": "Compound Interest Calculator",
+      "category": "finance",
+      "title": "Compound Interest Calculator | Watch Your Money Grow",
+      "description": "Calculate compound interest and see how your investments grow over time with different compounding frequencies.",
+      "keywords": "compound interest calculator, compound interest, investment growth calculator",
+      "icon": "💰",
+      "popular": true
+    },
+    {
+      "slug": "investment-return-calculator",
+      "name": "Investment Return Calculator",
+      "category": "finance",
+      "title": "Investment Return Calculator | ROI & Portfolio Growth",
+      "description": "Calculate your investment return, ROI, and portfolio growth with optional regular contributions.",
+      "keywords": "investment return calculator, ROI calculator, portfolio growth, investment calculator",
+      "icon": "📊",
+      "popular": false
+    },
+    {
+      "slug": "bmi-calculator",
+      "name": "BMI Calculator",
+      "category": "health",
+      "title": "BMI Calculator | Free Body Mass Index Tool",
+      "description": "Calculate your Body Mass Index (BMI) instantly. Find out if you're underweight, normal, overweight, or obese.",
+      "keywords": "BMI calculator, body mass index, BMI tool, healthy weight calculator",
+      "icon": "⚖️",
+      "popular": true
+    },
+    {
+      "slug": "calorie-calculator",
+      "name": "Calorie Calculator",
+      "category": "health",
+      "title": "Calorie Calculator | Daily Caloric Intake & Needs",
+      "description": "Calculate your daily caloric needs based on age, weight, height, gender, and activity level.",
+      "keywords": "calorie calculator, daily calories, TDEE calculator, caloric needs",
+      "icon": "🔥",
+      "popular": true
+    },
+    {
+      "slug": "ideal-weight-calculator",
+      "name": "Ideal Weight Calculator",
+      "category": "health",
+      "title": "Ideal Weight Calculator | Find Your Healthy Weight Range",
+      "description": "Find your ideal body weight based on height, gender, and frame size using multiple proven formulas.",
+      "keywords": "ideal weight calculator, healthy weight, ideal body weight, weight calculator",
+      "icon": "🏋️",
+      "popular": false
+    },
+    {
+      "slug": "calories-burned-calculator",
+      "name": "Calories Burned Calculator",
+      "category": "health",
+      "title": "Calories Burned Calculator | Exercise & Activity Tracker",
+      "description": "Calculate calories burned during exercise and physical activities based on your weight and workout duration.",
+      "keywords": "calories burned calculator, exercise calories, workout calorie calculator",
+      "icon": "🏃",
+      "popular": false
+    },
+    {
+      "slug": "daily-caloric-needs-calculator",
+      "name": "Daily Caloric Needs Calculator",
+      "category": "health",
+      "title": "Daily Caloric Needs Calculator | TDEE & Macros",
+      "description": "Calculate your Total Daily Energy Expenditure (TDEE) and daily caloric needs for weight loss, maintenance, or gain.",
+      "keywords": "daily caloric needs calculator, TDEE, total daily energy expenditure, macros calculator",
+      "icon": "🥗",
+      "popular": false
+    },
+    {
+      "slug": "age-calculator",
+      "name": "Age Calculator",
+      "category": "utility",
+      "title": "Age Calculator | Calculate Exact Age in Years, Months & Days",
+      "description": "Calculate your exact age in years, months, days, hours, and minutes from your date of birth.",
+      "keywords": "age calculator, calculate age, birthday calculator, how old am I",
+      "icon": "🎂",
+      "popular": true
+    },
+    {
+      "slug": "percentage-calculator",
+      "name": "Percentage Calculator",
+      "category": "utility",
+      "title": "Percentage Calculator | Calculate % of Any Number",
+      "description": "Calculate percentages, percentage change, and percentage of totals quickly and easily.",
+      "keywords": "percentage calculator, calculate percentage, percent calculator, percentage change",
+      "icon": "%",
+      "popular": true
+    },
+    {
+      "slug": "gpa-calculator",
+      "name": "GPA Calculator",
+      "category": "utility",
+      "title": "GPA Calculator | Calculate Your Grade Point Average",
+      "description": "Calculate your GPA for high school or college. Add courses, credits, and grades to find your GPA instantly.",
+      "keywords": "GPA calculator, grade point average, college GPA, high school GPA calculator",
+      "icon": "🎓",
+      "popular": false
+    },
+    {
+      "slug": "tip-calculator",
+      "name": "Tip Calculator",
+      "category": "utility",
+      "title": "Tip Calculator | Calculate Tip & Split the Bill",
+      "description": "Calculate the tip amount and split the bill among friends. Choose your tip percentage and number of people.",
+      "keywords": "tip calculator, calculate tip, bill splitter, gratuity calculator",
+      "icon": "🍽️",
+      "popular": false
+    },
+    {
+      "slug": "unit-converter",
+      "name": "Unit Converter",
+      "category": "utility",
+      "title": "Unit Converter | Length, Weight & Temperature Converter",
+      "description": "Convert between units of length, weight, and temperature. Fast and accurate unit conversion tool.",
+      "keywords": "unit converter, length converter, weight converter, temperature converter, metric imperial",
+      "icon": "🔄",
+      "popular": true
+    }
+  ]
+}

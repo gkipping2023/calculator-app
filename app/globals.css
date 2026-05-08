@@ -1,26 +1,37 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+/* Class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #0f172a;
+  --color-secondary: #6366f1;
+  --color-accent: #ec4899;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafc;
+  --foreground: #0f172a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #020617;
+  --foreground: #f1f5f9;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+/* Smooth transitions for dark mode */
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
 }
