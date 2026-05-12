@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { Suspense, useState, useMemo } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { Search } from 'lucide-react';
 import { getAllCalculators } from '@/app/lib/seo';
@@ -11,15 +12,18 @@ const CATEGORY_LABELS: Record<string, string> = {
   utility: 'Utilities',
 };
 
-export default function CalculatorsPage({
-  searchParams,
-}: {
-  searchParams: { category?: string; search?: string };
-}) {
-  return <CalculatorsClient initialCategory={searchParams.category} />;
+export default function CalculatorsPage() {
+  return (
+    <Suspense>
+      <CalculatorsClient />
+    </Suspense>
+  );
 }
 
-function CalculatorsClient({ initialCategory }: { initialCategory?: string }) {
+function CalculatorsClient() {
+  const searchParams = useSearchParams();
+  const initialCategory = searchParams?.get('category') ?? undefined;
+
   const allCalcs = getAllCalculators();
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState(initialCategory ?? 'all');
