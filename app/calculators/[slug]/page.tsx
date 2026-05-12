@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import dynamic from 'next/dynamic';
-import Script from 'next/script';
 import AdSenseAd from '@/app/components/AdSenseAd';
 import { getAllCalculators, getCalculatorBySlug, generateCalculatorMetadata } from '@/app/lib/seo';
 import { calculatorSchema } from '@/app/lib/schema';
@@ -62,8 +61,7 @@ export default async function CalculatorPage({
 
   return (
     <>
-      <Script
-        id={`schema-${slug}`}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />

@@ -29,11 +29,14 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Smooth transitions for dark mode */
-*,
-*::before,
-*::after {
-  transition-property: background-color, border-color, color;
-  transition-duration: 150ms;
-  transition-timing-function: ease;
+/* Smooth transitions for dark mode — inside @layer base so Tailwind
+   transition utilities (e.g. transition-all) still take precedence */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    transition-property: background-color, border-color, color;
+    transition-duration: 150ms;
+    transition-timing-function: ease;
+  }
 }
