@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "../app/**/*.{js,ts,jsx,tsx}";
+@source "../data/**/*.{js,ts,jsx,tsx,json}";
 @plugin "@tailwindcss/forms";
 
 /* Class-based dark mode */
