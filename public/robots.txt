@@ -4,4 +4,4 @@ Allow: /calculators/
 Disallow: /api/
 Disallow: /admin/
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://www.ezy-labs.com
