@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import CookieConsent from '@/app/components/CookieConsent';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
@@ -54,6 +55,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');}catch(e){}`,
           }}
         />
+        {/* Google Consent Mode v2 — default all to denied until user grants consent */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                analytics_storage: 'denied',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                wait_for_update: 500
+              });
+              // Restore previously saved consent without waiting for React
+              try {
+                var c = JSON.parse(localStorage.getItem('cookie_consent_v1') || 'null');
+                if (c) gtag('consent', 'update', {
+                  analytics_storage: c.analytics ? 'granted' : 'denied',
+                  ad_storage: c.advertising ? 'granted' : 'denied',
+                  ad_user_data: c.advertising ? 'granted' : 'denied',
+                  ad_personalization: c.advertising ? 'granted' : 'denied'
+                });
+              } catch(e) {}
+            `,
+          }}
+        />
         {/* Google AdSense */}
         {adsenseId && adsenseId !== 'ca-pub-xxxxxxxxxxxxxxxx' && (
           <Script
@@ -86,6 +113,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );
