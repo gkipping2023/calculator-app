@@ -49,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning className={inter.className}>
       <head>
+        
         {/* Dark mode: runs synchronously before first paint to prevent FOUC */}
         <script
           dangerouslySetInnerHTML={{
@@ -56,6 +57,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         {/* Google Consent Mode v2 — default all to denied until user grants consent */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6060276585627886"
+     crossOrigin="anonymous"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
