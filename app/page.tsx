@@ -1,9 +1,18 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import AdSenseAd from '@/app/components/AdSenseAd';
 import CategoryCard from '@/app/components/CategoryCard';
 import { getPopularCalculators } from '@/app/lib/seo';
 import { adSlots } from '@/app/lib/ads';
 import { websiteSchema } from '@/app/lib/schema';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yourdomain.com';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: siteUrl,
+  },
+};
 
 const categories = [
   {

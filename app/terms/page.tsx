@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yourdomain.com';
+
 export const metadata: Metadata = {
   title: 'Terms and Conditions',
   description: 'Terms and Conditions for using Calculator Pro.',
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: `${siteUrl}/terms`,
+  },
 };
 
 const SITE_NAME = 'Calculator Pro';

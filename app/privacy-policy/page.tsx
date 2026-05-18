@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yourdomain.com';
+
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy Policy for Calculator Pro — how we collect, use, and protect your data.',
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: `${siteUrl}/privacy-policy`,
+  },
 };
 
 const SITE_NAME = 'Calculator Pro';

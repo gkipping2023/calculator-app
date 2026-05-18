@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yourdomain.com';
+
 export const metadata: Metadata = {
   title: 'Contact Us',
   description: 'Get in touch with the Calculator Pro team.',
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: `${siteUrl}/contact`,
+  },
 };
 
 // TODO: Replace placeholder values with your actual contact details
