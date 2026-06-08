@@ -23,6 +23,16 @@ const CALCULATOR_COMPONENTS: Record<string, React.ComponentType> = {
   'gpa-calculator': dynamic(() => import('@/app/components/calculators/GPACalculator')),
   'tip-calculator': dynamic(() => import('@/app/components/calculators/TipCalculator')),
   'unit-converter': dynamic(() => import('@/app/components/calculators/UnitConverter')),
+  'retirement-calculator': dynamic(() => import('@/app/components/calculators/RetirementCalculator')),
+  'salary-calculator': dynamic(() => import('@/app/components/calculators/SalaryCalculator')),
+  'interest-rate-calculator': dynamic(() => import('@/app/components/calculators/InterestRateCalculator')),
+  'sales-tax-calculator': dynamic(() => import('@/app/components/calculators/SalesTaxCalculator')),
+  'amortization-calculator': dynamic(() => import('@/app/components/calculators/AmortizationCalculator')),
+  'body-fat-calculator': dynamic(() => import('@/app/components/calculators/BodyFatCalculator')),
+  'bmr-calculator': dynamic(() => import('@/app/components/calculators/BMRCalculator')),
+  'pace-calculator': dynamic(() => import('@/app/components/calculators/PaceCalculator')),
+  'date-calculator': dynamic(() => import('@/app/components/calculators/DateCalculator')),
+  'hours-calculator': dynamic(() => import('@/app/components/calculators/HoursCalculator')),
 };
 
 // Generate all static routes at build time for SEO

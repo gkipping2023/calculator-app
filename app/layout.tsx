@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: '%s | Calculator Pro',
   },
   description:
-    'Fast, accurate free online calculators for finance, health, fitness, math, and more. Mortgage, BMI, loan, and 15+ calculators.',
+    'Fast, accurate free online calculators for finance, health, fitness, math, and more. Mortgage, BMI, loan, and 25+ calculators.',
   keywords:
     'calculator, mortgage calculator, loan calculator, BMI calculator, finance calculator, free online calculator',
   authors: [{ name: 'Calculator Pro' }],

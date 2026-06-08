@@ -30,6 +30,10 @@ export function getPopularCalculators(): CalculatorMeta[] {
 export function generateCalculatorMetadata(slug: string) {
   const calc = getCalculatorBySlug(slug);
   if (!calc) return {};
+  
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yourdomain.com';
+  const canonicalUrl = `/calculators/${calc.slug}`;
+  
   return {
     title: calc.title,
     description: calc.description,
@@ -38,7 +42,7 @@ export function generateCalculatorMetadata(slug: string) {
       title: calc.title,
       description: calc.description,
       type: 'website' as const,
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/calculators/${calc.slug}`,
+      url: canonicalUrl,
     },
     twitter: {
       card: 'summary' as const,
@@ -46,7 +50,7 @@ export function generateCalculatorMetadata(slug: string) {
       description: calc.description,
     },
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/calculators/${calc.slug}`,
+      canonical: canonicalUrl,
     },
   };
 }

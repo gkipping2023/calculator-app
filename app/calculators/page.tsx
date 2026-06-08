@@ -7,15 +7,15 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yourdomain.com';
 
 export const metadata: Metadata = {
   title: 'All Calculators | Calculator Pro',
-  description: 'Browse all 15+ free online calculators for finance, health, fitness, math, and utility calculations.',
+  description: 'Browse all 25+ free online calculators for finance, health, fitness, math, and utility calculations.',
   keywords: 'all calculators, calculator directory, finance calculators, health calculators, math calculators',
   alternates: {
-    canonical: `${siteUrl}/calculators`,
+    canonical: `/calculators`,
   },
   openGraph: {
     title: 'All Calculators | Calculator Pro',
-    description: 'Browse all 15+ free online calculators for finance, health, fitness, math, and utility calculations.',
-    url: `${siteUrl}/calculators`,
+    description: 'Browse all 25+ free online calculators for finance, health, fitness, math, and utility calculations.',
+    url: `/calculators`,
     type: 'website',
   },
 };

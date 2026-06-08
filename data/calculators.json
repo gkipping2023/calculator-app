@@ -149,6 +149,106 @@
       "keywords": "unit converter, length converter, weight converter, temperature converter, metric imperial",
       "icon": "🔄",
       "popular": true
+    },
+    {
+      "slug": "retirement-calculator",
+      "name": "Retirement Calculator",
+      "category": "finance",
+      "title": "Retirement Calculator | Plan Your Retirement Savings",
+      "description": "Calculate how much you need to save for retirement and estimate your retirement income based on age, savings, and investment returns.",
+      "keywords": "retirement calculator, retirement planning, retirement savings, retirement income, retirement plan calculator",
+      "icon": "🏖️",
+      "popular": true
+    },
+    {
+      "slug": "salary-calculator",
+      "name": "Salary Calculator",
+      "category": "finance",
+      "title": "Salary Calculator | Calculate Net Pay & Gross Income",
+      "description": "Calculate your gross and net salary based on your annual income, pay period, and tax rate. Perfect for budgeting and tax planning.",
+      "keywords": "salary calculator, net pay calculator, gross income, paycheck calculator, tax calculator",
+      "icon": "💵",
+      "popular": true
+    },
+    {
+      "slug": "interest-rate-calculator",
+      "name": "Interest Rate Calculator",
+      "category": "finance",
+      "title": "Interest Rate Calculator | Find Your Interest Rate",
+      "description": "Calculate the interest rate of a loan based on principal, total interest paid, and loan term.",
+      "keywords": "interest rate calculator, calculate interest rate, loan interest rate, APR calculator",
+      "icon": "📊",
+      "popular": false
+    },
+    {
+      "slug": "sales-tax-calculator",
+      "name": "Sales Tax Calculator",
+      "category": "finance",
+      "title": "Sales Tax Calculator | Calculate Tax on Purchases",
+      "description": "Calculate sales tax and total purchase price based on tax rate. Quick and easy tax calculation tool.",
+      "keywords": "sales tax calculator, tax calculator, calculate tax, sales tax",
+      "icon": "🛒",
+      "popular": true
+    },
+    {
+      "slug": "amortization-calculator",
+      "name": "Amortization Calculator",
+      "category": "finance",
+      "title": "Amortization Calculator | Create Loan Payment Schedule",
+      "description": "Create an amortization schedule and calculate monthly loan payments, total interest, and principal breakdown.",
+      "keywords": "amortization calculator, loan amortization, amortization schedule, payment schedule",
+      "icon": "📋",
+      "popular": false
+    },
+    {
+      "slug": "body-fat-calculator",
+      "name": "Body Fat Calculator",
+      "category": "health",
+      "title": "Body Fat Calculator | Calculate Body Fat Percentage",
+      "description": "Calculate your body fat percentage and lean mass using measurements. Uses the US Navy method for accurate results.",
+      "keywords": "body fat calculator, body fat percentage, lean mass calculator, body composition",
+      "icon": "💪",
+      "popular": true
+    },
+    {
+      "slug": "bmr-calculator",
+      "name": "BMR Calculator",
+      "category": "health",
+      "title": "BMR Calculator | Basal Metabolic Rate & TDEE Calculator",
+      "description": "Calculate your basal metabolic rate (BMR) and total daily energy expenditure (TDEE) using the Mifflin-St Jeor formula.",
+      "keywords": "BMR calculator, basal metabolic rate, TDEE calculator, metabolism calculator, calorie needs",
+      "icon": "🔥",
+      "popular": true
+    },
+    {
+      "slug": "pace-calculator",
+      "name": "Pace Calculator",
+      "category": "health",
+      "title": "Pace Calculator | Running & Exercise Pace Calculator",
+      "description": "Calculate your running pace and speed. Find your average pace per mile or kilometer with time and distance.",
+      "keywords": "pace calculator, running pace, speed calculator, running speed, miles per hour",
+      "icon": "🏃",
+      "popular": false
+    },
+    {
+      "slug": "date-calculator",
+      "name": "Date Calculator",
+      "category": "utility",
+      "title": "Date Calculator | Calculate Days Between Dates",
+      "description": "Calculate the number of days, weeks, months, and years between two dates. Perfect for event planning and age calculations.",
+      "keywords": "date calculator, days between dates, date difference calculator, time between dates",
+      "icon": "📅",
+      "popular": true
+    },
+    {
+      "slug": "hours-calculator",
+      "name": "Hours Calculator",
+      "category": "utility",
+      "title": "Hours Calculator | Calculate Work Hours & Time Tracking",
+      "description": "Calculate total hours and minutes worked between start and end times. Includes break time calculation for accurate timekeeping.",
+      "keywords": "hours calculator, time calculator, work hours calculator, time tracking, hours worked",
+      "icon": "⏰",
+      "popular": true
     }
   ]
 }
